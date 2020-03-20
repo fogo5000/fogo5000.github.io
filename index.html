@@ -24,18 +24,40 @@
             font-size: 2em;
             font-family: "monospace", sans-serif;
         }
+        ul, ol
+        {
+            list-style-position: inside;
+            color: #88EDED;
+            text-align: center;
+            font-size: 20px;
+            font-family: "monospace", sans-serif;
+        }
+        #Foto
+        {
+            transform: rotate(-90deg);
+            border-radius: 30em;
+            width: 300px;
+            right: 300px;
+            float: left;
+        }
+        .img
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto ;
+        }
     </style>
 </head>
 <body>
     <h1 id="Entrada">Portifólio do Lucas Barbosa Rosa</h1>
     <h2 >Olá meu nome é Lucas Barbosa Rosa, e seja bem vindo ao meu portifólio</h2>
-    <br><br>
-    <img id="Foto" src="./P_20200312_110253_vHDR_Auto.jpg" alt="Foto do Lucas" width="200">
+    <br><br><br><br>
+    <img class="img" id="Foto" src="./P_20200312_110253_vHDR_Auto.jpg" alt="Foto do Lucas">
     <p class="letras_em_geral">Este sou eu, a beleza até cega, mais isso é temporário você se acostuma</p>
-    <br>
+    <br><br><br>
     <h3 id="Ind">Índice</h3>
     <p>
-        <ol class="letras_em_geral">
+        <ol>
             <li><a class="letras_em_geral" href="#Entrada">Topo da página</a></li>
             <li><a class="letras_em_geral" href="#Foto">Minha Foto</a></li>
             <li><a class="letras_em_geral" href="#Sobre">Sobre Mim</a></li>
@@ -54,7 +76,7 @@
     </p>
     <br>
     <h3 id="Conhecimentos">Meus Conhecimentos</h3>
-    <ul class="letras_em_geral" >
+    <ul>
         <li><strong>Conhecimentos em Softwares: </strong>
         <li>Unity3D</li>
         <li>Visual Studio</li> 
