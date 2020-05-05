@@ -1,0 +1,114 @@
+body {
+  background: linear-gradient(45deg, rgb(224, 224, 224), transparent),
+    repeating-linear-gradient(45deg, rgb(187, 187, 187) 0%, rgb(187, 187, 187)
+    5%, transparent 5%, transparent 10%),
+    rgb(224, 224, 224) repeating-linear-gradient(-45deg, rgb(187, 187, 187, 0.5)
+    0%, rgba(187, 187, 187, 0.5) 5%, transparent 5%, transparent 10%);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.main-content {
+  background-color: rgb(228, 228, 228);
+  width: 65vw;
+}
+
+.container-layout {
+  height: 1px;
+  width: 65vw;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-letras {
+  height: 7vmax;
+  max-width: 55vw;
+}
+
+.logo-escudo {
+  height: 7vmax;
+  width: 10vw;
+}
+
+.navi {
+  display: flex;
+  font-size: 3.2vw;
+  justify-content: space-around;
+}
+
+.test {
+  background-image: url("img/bolinha_Harry_Poter_animation.png");
+  height: 31px;
+  width: 72px;
+  animation: animacao2 .7s steps(8) infinite ;
+}
+
+.tt {
+  animation: animacao 9s backwards infinite;
+}
+
+@keyframes animacao {
+  from {
+    transform: translate(0, 0);
+  }
+
+  30% {
+    transform: translate(23vw, 4vh);
+  }
+
+
+  60% {
+    transform: translate(37vw, 1vh);
+  }
+
+  to {
+    transform: translate(55vw, 4vh);
+  }
+}
+
+@-webkit-keyframes animacao {
+  from {
+    transform: translateX(0);
+    background-position: 0;
+  }
+
+  to {
+    transform: translateX(53vw);
+    background-position: -576px;
+  }
+}
+
+@keyframes animacao2 {
+  0% {
+    background-position: 0;
+  }
+
+  100% {
+    background-position: -576px;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout { background-color: red; }
+
+  .logos-linesD { display: none; }
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout { background-color: yellow; }
+
+  .logos-linesD { display: none; }
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px red solid;
+  }
+}
